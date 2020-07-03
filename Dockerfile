@@ -51,4 +51,5 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 EXPOSE 80
+EXPOSE 5432
 CMD ["/usr/bin/supervisord"]
